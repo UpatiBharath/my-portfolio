@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <!--  Tailwind CSS from CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- CDN for social media icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../src/style/index.css">
+    <script src="../src/script/index.js"></script>
+</head>
+
+<body class="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+
+    <!-- Navigation Bar -->
+    <nav class="sticky top-0 z-50 p-4 bg-white/70 dark:bg-gray-800/70 backdrop-blur-md shadow-sm">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-xl font-bold text-indigo-600 dark:text-indigo-400">Upati Bharath</a>
+            <div class="space-x-4">
+                <a href="#about"
+                    class="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400">About</a>
+                <a href="#projects"
+                    class="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400">Projects</a>
+                <a href="#skills"
+                    class="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400">Skills</a>
+                <a href="#contact"
+                    class="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Container -->
+    <main class="container mx-auto p-4 md:p-8 space-y-16 lg:space-y-24">
+
+        <!-- Hero Section -->
+        <section id="hero"
+            class="flex flex-col lg:flex-row items-center justify-center pt-20 pb-12 gap-8 lg:gap-16 text-center lg:text-left">
+            <div class="flex-shrink-0">
+                <img src="../public/images/image-main.jpg" alt="Profile Picture"
+                    class="rounded-full w-48 h-48 lg:w-64 lg:h-64 object-cover border-4 border-indigo-600 dark:border-indigo-400 shadow-lg">
+            </div>
+            <div>
+                <h1 class="text-4xl lg:text-6xl font-extrabold text-gray-900 dark:text-white leading-tight mb-4">
+                    Hi, I'm <span class="text-indigo-600 dark:text-indigo-400">Bharath</span>
+                </h1>
+                <p class="text-xl lg:text-2xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto lg:mx-0">
+                    A Passionate Full-Stack Developer creating elegant and responsive web applications.
+                </p>
+                <div class="mt-8 flex justify-center lg:justify-start space-x-4">
+                    <a href="#contact"
+                        class="px-6 py-3 bg-indigo-600 text-white font-semibold rounded-full shadow-lg hover:bg-indigo-700 transition duration-300">
+                        Get in Touch
+                    </a>
+                    <a href="#projects"
+                        class="px-6 py-3 bg-gray-200 text-gray-800 font-semibold rounded-full shadow-lg hover:bg-gray-300 transition duration-300 dark:bg-gray-700 dark:text-gray-200 dark:hover:bg-gray-600">
+                        View Projects
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="text-center card">
+            <h2 class="text-3xl font-bold mb-4 text-gray-900 dark:text-gray-600">About Me</h2>
+            <p class="text-gray-600 dark:text-gray-300 max-w-4xl mx-auto leading-relaxed">
+                Enthusiastic and detail-oriented Computer Science graduate with hands-on experience in front-end
+                technologies like HTML, CSS, JavaScript, Bootstrap, and React.js. Passionate about building clean,
+                responsive, and user-friendly web interfaces. Completed academic projects including portfolio websites
+                and e-commerce UI clones, showcasing a strong eye for design and functionality. A quick learner and
+                effective problem-solver, now seeking an entry-level UI Developer role where I can contribute to a
+                dynamic team and grow as a full stack developer.
+            </p>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="card">
+            <h2 class="text-3xl font-bold text-center mb-8 text-gray-900 dark:text-gray-600">My Projects</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
+                <!-- Project 1 -->
+                <div
+                    class="bg-gray-50 lg:flex-row justify-between dark:bg-gray-800 rounded-2xl p-6 hover:scale-105 transition-transform duration-300 shadow-md">
+                    <img src="../public/images/to-do-image.jpg" alt="to-do-image" class="rounded-xl mb-4 w-full h-auto">
+                    <h3 class="text-xl font-semibold mb-2 text-gray-900 dark:text-white">To-Do-Application</h3>
+                    <p class="text-gray-600 dark:text-gray-300">A To-Do Application is a task management tool that helps
+                        users organize their daily activities and keep track of tasks efficiently. It allows users to
+                        create, edit, update, and delete tasks based on their priorities. The app provides a simple and
+                        user-friendly interface where tasks can be marked as completed or pending, helping users stay
+                        productive and organized. The main purpose of a To-Do application is to improve time management
+                        and productivity by keeping tasks organized in one place.</p>
+                    <button class=" w-100 mt-2 bg-green-600 p-2 w-full rounded-full"><a href="#">Project
+                            Link</a></button>
+                </div>
+                <!-- Project 2 -->
+                <div
+                    class="bg-gray-50 lg:flex-row lg:justify-between dark:bg-gray-800 rounded-2xl p-6 hover:scale-105 transition-transform duration-300 shadow-md">
+                    <img src="../public/images/roomImg1.png" alt="Rooms image" class="rounded-xl mb-4 w-full h-auto">
+                    <h3 class="text-xl font-semibold mb-2 text-gray-900 dark:text-white">Hotal Room Bookings</h3>
+                    <p class="text-gray-600 dark:text-gray-300">A full-stack web application designed for seamless hotel
+                        discovery and booking. This platform allows users to browse a curated selection of hotels,
+                        filter by location, price, and amenities, and book rooms with a secure, integrated payment
+                        system. The app demonstrates robust front-end development with a clean, responsive UI and a
+                        scalable back-end architecture for data management.</p>
+                    <button class=" w-100 mt-2 bg-green-600 p-2 w-full rounded-full">Project Link</button>
+                </div>
+                <!-- Project 3 -->
+                <!-- <div class="bg-gray-50 dark:bg-gray-800 rounded-2xl p-6 hover:scale-105 transition-transform duration-300 shadow-md">
+                    <img src="https://placehold.co/400x250/4B5563/FFFFFF?text=Project+3" alt="Project 3" class="rounded-xl mb-4 w-full h-auto">
+                    <h3 class="text-xl font-semibold mb-2 text-gray-900 dark:text-white">Task Management Tool</h3>
+                    <p class="text-gray-600 dark:text-gray-300">A productivity tool to manage tasks, set deadlines, and track progress, with a clean and intuitive user interface.</p>
+                    <button class="w-100 mt-2 bg-green-600 p-2 w-full rounded-full">Project Link</button>
+                </div> -->
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="card">
+            <h2 class="text-3xl font-bold text-center mb-8 text-gray-900 dark:text-gray-600">Skills</h2>
+            <div class="flex flex-wrap justify-center gap-4">
+                <span
+                    class="px-4 py-2 bg-indigo-100 text-indigo-800 rounded-full font-medium dark:bg-indigo-900 dark:text-indigo-200">HTML</span>
+                <span
+                    class="px-4 py-2 bg-indigo-100 text-indigo-800 rounded-full font-medium dark:bg-indigo-900 dark:text-indigo-200">CSS</span>
+                <span
+                    class="px-4 py-2 bg-indigo-100 text-indigo-800 rounded-full font-medium dark:bg-indigo-900 dark:text-indigo-200">JavaScript</span>
+                <span
+                    class="px-4 py-2 bg-indigo-100 text-indigo-800 rounded-full font-medium dark:bg-indigo-900 dark:text-indigo-200">React</span>
+                <span
+                    class="px-4 py-2 bg-indigo-100 text-indigo-800 rounded-full font-medium dark:bg-indigo-900 dark:text-indigo-200">Node.js</span>
+                <span
+                    class="px-4 py-2 bg-indigo-100 text-indigo-800 rounded-full font-medium dark:bg-indigo-900 dark:text-indigo-200">Express.js</span>
+                <span
+                    class="px-4 py-2 bg-indigo-100 text-indigo-800 rounded-full font-medium dark:bg-indigo-900 dark:text-indigo-200">Tailwind
+                    CSS</span>
+                <span
+                    class="px-4 py-2 bg-indigo-100 text-indigo-800 rounded-full font-medium dark:bg-indigo-900 dark:text-indigo-200">Git</span>
+                <span
+                    class="px-4 py-2 bg-indigo-100 text-indigo-800 rounded-full font-medium dark:bg-indigo-900 dark:text-indigo-200">Bootstrap</span>
+                <span
+                    class="px-4 py-2 bg-indigo-100 text-indigo-800 rounded-full font-medium dark:bg-indigo-900 dark:text-indigo-200">MongoDb</span>
+                <span
+                    class="px-4 py-2 bg-indigo-100 text-indigo-800 rounded-full font-medium dark:bg-indigo-900 dark:text-indigo-200">MySQL</span>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="card">
+            <h2 class="text-3xl font-bold text-center mb-8 text-gray-900 dark:text-gray-600">Get in Touch</h2>
+            <div class="flex flex-wrap justify-center gap-8">
+                <!-- Social Link 1 (GitHub) -->
+                <a href="https://github.com/upatibharath-dev" class="flex flex-col items-center group">
+                    <div
+                        class="p-4 bg-gray-200 rounded-full group-hover:bg-indigo-600 transition duration-300 dark:bg-gray-700 dark:group-hover:bg-indigo-400">
+                        <div
+                            class="w-6 h-6 text-gray-600 group-hover:text-white transition duration-300 dark:text-gray-300 dark:group-hover:text-white">
+                            <span class="text-3xl flex justify-center align-center text-center bi bi-github"></span>
+                        </div>
+                    </div>
+                    <span
+                        class="mt-2 text-gray-600 dark:text-gray-300 group-hover:text-indigo-600 dark:group-hover:text-indigo-400">GitHub</span>
+                </a>
+                <!-- Social Link 2 (LinkedIn) -->
+                <a href="https://www.linkedin.com/in/bharath-upati-2122a2362/" class="flex flex-col items-center group">
+                    <div
+                        class="p-4 bg-gray-200 rounded-full group-hover:bg-indigo-600 transition duration-300 dark:bg-gray-700 dark:group-hover:bg-indigo-400">
+                        <div
+                            class="w-6 h-6 text-gray-600 group-hover:text-white transition duration-300 dark:text-gray-300 dark:group-hover:text-white">
+                            <span class="text-3xl flex justify-center align-center text-center bi bi-linkedin"></span>
+                        </div>
+                    </div>
+                    <span
+                        class="mt-2 text-gray-600 dark:text-gray-300 group-hover:text-indigo-600 dark:group-hover:text-indigo-400">LinkedIn</span>
+                </a>
+                <!-- Social Link 3 (Email) -->
+                <a href="#" title="upatibharath@gmail.com" class="flex flex-col items-center group">
+                    <div
+                        class="p-4 bg-gray-200 rounded-full group-hover:bg-indigo-600 transition duration-300 dark:bg-gray-700 dark:group-hover:bg-indigo-400">
+                        <div
+                            class="w-6 h-6 text-gray-600 group-hover:text-white transition duration-300 dark:text-gray-300 dark:group-hover:text-white">
+                            <span class="text-3xl flex justify-center align-center text-center bi bi-envelope"></span>
+                        </div>
+                    </div>
+                    <span
+                        class="mt-2 text-gray-600 dark:text-gray-300 group-hover:text-indigo-600 dark:group-hover:text-indigo-400">Email</span>
+                </a>
+                <!-- Contect Number -->
+                <a href="#" title="+91 7995540525" class="flex flex-col items-center group">
+                    <div
+                        class="p-4 bg-gray-200 rounded-full group-hover:bg-indigo-600 transition duration-300 dark:bg-gray-700 dark:group-hover:bg-indigo-400">
+                        <div
+                            class="w-6 h-6 text-gray-600 group-hover:text-white transition duration-300 dark:text-gray-300 dark:group-hover:text-white">
+                            <span class="text-3xl flex justify-center align-center text-center bi bi-telephone"></span>
+                        </div>
+                    </div>
+                    <span
+                        class="mt-2 text-gray-600 dark:text-gray-300 group-hover:text-indigo-600 dark:group-hover:text-indigo-400">Contect</span>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center py-6 text-gray-500 dark:text-gray-400">
+        &copy; 2024 Bharath. All Rights Reserved.
+    </footer>
+
+</body>
+
+</html>

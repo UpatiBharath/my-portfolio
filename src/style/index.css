@@ -1,0 +1,20 @@
+body {
+   font-family: 'Inter', sans-serif;
+   background-color: #f3f4f6;
+   color: #1f2937;
+}
+
+.scroll-smooth {
+   scroll-behavior: smooth;
+}
+
+/* A simple utility class for rounded corners and shadow */
+.card {
+   background-color: #ffffff;
+   border-radius: 1.5rem;
+   /* rounded-3xl */
+   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+   /* shadow-xl */
+   padding: 2.5rem;
+   /* p-10 */
+}
